@@ -1,0 +1,54 @@
+.width75{
+    width:75%;
+}
+.color{
+    color:#C98474;
+}
+
+h1{
+    padding-left:36px;
+}
+table{
+    width:100%;
+    padding: 0 36px;
+    color:#C98474;
+
+}
+
+table td .tdLabel{
+    width:20%;
+}
+table input,
+ textarea,
+ .cakename,
+ #submit{
+    border:2px solid #C98474;
+    border-radius: 3px;
+    padding:8px;
+    margin:6px;
+
+}
+table .cakename{
+    font-size:16px;
+    width:76.7%;
+}
+table td .checkbox{
+    padding:8px;
+    margin:6px;
+    
+}
+table input .checkbox{
+    width:20px;
+    display: inline-block;
+}
+
+table td .yes-no{
+    display:inline-block;
+}
+table #submit{
+    color:white;
+    background-color:#C98474;
+    width:20%;
+    padding: 12px;
+    font-size:16px;
+}

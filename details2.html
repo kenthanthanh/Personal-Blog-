@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>Coconut Bundt Cake</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <section>
+                <hr>
+                <p>07/Jan</p>
+                <h2>Coconut Bundt Cake</h2>
+                <p>Last week flew by and before I knew it, it was time to plan the menu for Sunday dinner. Sundays have been a perfect opportunity for me to experiment with new dessert recipes, especially those that serve tons of people, since we have help polishing it all off and don't have it sitting around the house, tempting us for days.</p>
+                <img src="./Images/coconut1.jpg" alt="Coconut Bundt Cake">
+            </section>
+            <div>
+                    <p>This is the very best Coconut Cake Recipe EVER! It's moist, fluffy, and soft, with the perfect amount of coconut flavor all topped with creamy coconut buttercream frosting!</p>
+                    <p>Love a classic cake recipe? Make sure to check out my cake store!</p>
+                <img src="./Images/coconut2.jpg" alt="Coconut Bundt Cake">
+            </div>
+            <div>
+                <p>Today's recipe is a MEGA CLASSIC! It's a cake recipe that I LOVE making, but have to get out of the house instantly, or I will eat the entire thing. AND it's not exactly health food.</p>
+                <p>This Coconut Cake is what cake dreams are made of. It’s rustic and casual looking, but it's special enough to serve on holidays, birthdays, or to guests. This, along with my Cake Store are my go-to cake recipes I make when I want to impress.</p>
+                <img src="./Images/coconut3.jpg" alt="Coconut Bundt Cake">
+                <p>The cake itself is soft, fluffy, and moist and the frosting is creamy coconut buttercream! A lot of coconut cakes have cream cheese frosting, but I prefer mine with coconut buttercream. It’s fluffy and sweet, and partners with the cake texture in a gorgeous way. Cake dreams are happening today, lads. Get your mixer ready!</p>
+            </div>
+        </main>
+        <hr>
+        <!--Footer Section-->
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+    }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+/*Mobile Responsive*/
+@media only screen and ( max-width:768px){
+    
+    .banner{
+    width: 100%;
+    height: auto;
+}
+    header .header-web{
+    top:20%;
+}
+    /*Navigation Menu*/
+    
+    #headermenu .main-menu > li{
+        display:block;
+
+    }
+
+    #headermenu  .mobile-menu-btn{
+        display:block;
+    }
+
+    /*contact & order*/
+    header .banner{
+        width: 100%;
+        height: auto;
+    }
+        header .header-web{
+        top:20%;
+        }
+    h1{
+            padding-left:4px;
+    }
+    table{
+        padding:0px;
+    }
+    table td{
+        display:block;
+        padding: 0px;
+        margin-top:8px;
+    }
+    .width75{
+        width:98%
+    }
+    table .cakename{
+        width:99.5%;
+    }
+    table td .tdLabel{
+        width:0%;
+    }
+    table input,
+    textarea,
+    .cakename,
+    #submit{
+    padding-right:0;
+    margin:0px;
+    }
+    /*about & home*/
+    body main{
+        padding:0 8px;
+    }
+
+}
+/*Tablet Responsive*/
+@media only screen and (min-width: 768.1px) and (max-width:992px){
+/*hidden menu*/
+#headermenu .main-menu .hidden-menu{
+    display:none;
+}
+/*contact & order*/
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+        header .header-web{
+        top:20%;
+        }
+    h1{
+            padding-left:4px;
+    }
+    table{
+        padding:0px;
+    }
+    table td{
+        display:block;
+        padding: 0px;
+        margin-top:8px;
+    }
+    .width75{
+        width:99%
+    }
+    table .cakename{
+        width:100.5%;
+    }
+    table td .tdLabel{
+        width:0%;
+    }
+    table input,
+    textarea,
+    .cakename,
+    #submit{
+    padding-right:0;
+    margin:0px;
+}
+/*about & home*/
+    body main{
+        padding:0 8px;
+    }
+}
+/*Laptop & Destop Responsive*/
+@media only screen and (min-width:992px) {
+    #headermenu .main-menu .hidden-menu{
+        display:none;
+
+}
+
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>Cream Cheese Pound Cake</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <section>
+                <hr>
+                <p>01/Feb</p>
+                <h2>Cream Cheese Pound Cake</h2>
+                <p>If you are looling for the perfect cream cheese piund cake recipe that turns out buttery, moist, and dense each and every time, add this year-round crowd-pleaser to your list! Using only 7 simple ingredients, this easy cream cheese pound cake will quickly become your favorite, serve plain with a sprinkle of poewdered sugar or offer homemade whipped cream and berries, or a dizzle of salted caramel or fudge sauce.</p>
+                <img src="./Images/cream-cheese-pound-cake.jpg" alt="Cream Cheese Pound Cake">
+            </section>
+            <div>
+                <p>Homemade pound cake is one of my all-time favorite desserts. It's simple yet decadent, tastes delicious with whipped cream and berries, and looks party-ready straight out of the pan. My secret to the very best one? Cream cheese! Cream cheese gives pound cake a super-moist, pleasantly dense texture that's simply irresistible. Here's how to do it.</p>
+                <img src="./Images/cream1.jpg" alt="Cream Cheese Pound Cake" >
+            </div>
+            <section>
+                <h3>What Does Cream Cheese Pound Cake Taste Like?</h3>
+                <p>Cream cheese pound cake tastes like traditional pound cake with a slightly tangy flavor. But its addition has less to do with taste and more to do with texture. The cream cheese helps keep the pound cake moist and dense (in a good way), similar to how yogurt or sour cream often add moisture to baked goods. Even if you over-bake this cake slightly, the cream cheese will help keep it moist and prevent it from drying out.</p>
+                <img src="./Images/cream2.jpg" alt="Cream Cheese Pound Cake">
+            </section>
+            <section>
+                    <h3>Why Does My Cream Cheese Pound Cake Fall?</h3>
+                    <p>There are a few reasons why your pound cake might fall, but the most common reason is that the cake has been exposed to cool air before it was fully baked. This could happen if you open the oven door too many times during baking, or if you remove the cake from the oven before it's fully baked. If this happens, pop the cake back in the oven and bake until a toothpick comes out clean. The cake won't rise again, but it will taste delicious nonetheless.</p>
+            </section>
+
+        </main>
+        <hr>
+        <!--Footer Section-->
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+    }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/form.css" rel="stylesheet"> 
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>Order now</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <script src="./Js/order.js"></script>
+
+            <h1>Order now</h1>
+            <hr>
+            <form action="#" name="myForm" onsubmit = "return validate()">
+                <table>
+                    <tr>
+                        <td class = "tdLabel"><label for="name" class="label">Cake name:</label></td>
+                        <td >
+                            <select name="cakename"  class=" cakename color">
+                                <option value="Select cake">---Select cake---</option>
+                                <option value="Classic Yellow Cake">Classic Yellow Cake</option>
+                                <option value="Coconut Bundt Cake">Coconut Bundt Cake</option>
+                                <option value="Cream Cheese Pound Cake">Cream Cheese Pound Cake</option>
+                                <option value="German Chocolate Cake">German Chocolate Cake</option>
+                            </select>
+                            <span id="cakename"></span>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="tdLabel"><label for="name">Your name:</label></td>
+                        <td ><input type="text" name="name" value=""  class="width75">
+                            <span id="name" ></span>
+                        </td>
+
+                    </tr>
+                   
+                    <tr>
+                        <td class="tdLabel"><label >Message:</label></td>
+                        <td ><input type="text" name="message" value=""  class="width75 color" placeholder="type your text that write on the cake..." >
+                        <span id="message"></span>
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="tdLabel"><label>Includes:</label></td>
+                        <td class="checkbox">
+                            <input type="checkbox" name="include" value="Candle">
+                            <label> Candle</label><br>
+                            <input type="checkbox" name="include" value="Firework">
+                            <label> Firework</label><br>      
+                            <input type="checkbox" name="include" value="Toys">
+                            <label> Toys</label><br>                      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label>Deliver date:</label></td>
+                        <td >
+                            <label for="deliver"></label>
+                            <input type="date" class="width75 color" name="deliver">
+                            <span id="deliver"></span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label>Deliver to:</label></td>
+                        <td>
+                        <textarea name="messagecontent" class="width75" rows="8" cols="80"></textarea>
+                        <span id="message-content"></span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label >Call before deliver?</label></td>
+                        <td>
+                            <div class="yes-no">
+                                <input type="radio" name="callbefore" value="Yes">
+                                <label>Yes</label><br>
+
+                            </div>
+                            <div class="yes-no">
+                                <input type="radio"  name="callbefore" value="No">
+                                <label>No</label><br>
+
+                            </div>
+
+                            
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" id="submit"  value="Order now" />
+                        </td>
+                    </tr>
+    
+                </table>
+
+            </form>
+            <script src="./Js/order.js"></script>
+        </main>
+        <hr>
+        <!--Footer Section-->
+
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+    }
+            </script>
+    </body>
+</html>

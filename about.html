@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>Ken's Cake Blog</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            
+            <h2>About Ken's Cake</h3>
+            <img class="poster" src="./Images/yellow-cake-chocolate-frosting.jpg" alt="Cake's Poster">
+           <article>
+            <h4>Hello and welcome! I'm Michelle and I believe anyone can learn to condidently make recipes worthy of celebration. </h4>
+            <p>"I made your pavlova recipe today and it was delicious! As usual, your recipe was easy to follow. There's four of us here and there's only one third left/ It'll be gone soon. Thanks for another great recipe!"</p>
+            <p>We tried your weeknighr bolognese recipe yesterday! Oh my gosh, it was so good. My husband is still talking about it this morning.</p>
+            <p>Michelle, just wanted to tell you I made your beef stew recipe this weekend. Just incredible!! The oven method was perfect and truly brought out the flavors.</p>
+            <p>I just wanted to send you a quick email to tell you that I really love your recipes. I have always loved to cook, but I haven't been much a baker. I have been baking more and more and I find that your recipes are always the best.</p>
+            <p>Imagine your friends and coworkers gobbling up those special treats that you made for them. Imagine that the dish you made for Thinksgiving or those cookies for Christmas are all that anyone is talking abour and EVERYNOTE has asked you for the recipe...</p>
+           </article>
+        </main>
+        <hr>
+        <!--Footer Section-->
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+        }
+            </script>
+    </body>
+</html>

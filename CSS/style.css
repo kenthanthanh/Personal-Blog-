@@ -1,0 +1,114 @@
+html{
+    font-family: 'Dancing Script', cursive;
+    font-style:italic;
+
+}
+body{
+    margin:0;
+    color:#704F4F;
+}
+body main{
+    padding:0 16px;
+}
+body a{
+    color:#704F4F;
+    text-decoration: none;
+}
+/*Header*/
+header .banner{
+    width:100%;
+
+}
+header .header-web{
+    text-align:center;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top:450px ;
+    color:white !important;
+    background-color:rgba(0,0,0,0.2);
+    padding:8px 0;
+    font-size:36px;
+}
+
+
+/*Main */
+
+#headermenu{
+    height:60px;
+    line-height:60px;
+    z-index:1;
+    display:inline-block;
+    width:100%;
+    overflow:hidden;
+
+
+}
+#headermenu .main-menu {
+    margin:0;
+    padding:0;
+    display:inline-block;  
+
+}
+#headermenu .main-menu > li{
+    display:inline-block;
+
+
+}
+#headermenu .main-menu > li >a{
+    padding:0 16px;
+    font-size:20px;
+    line-height:60px;
+}
+
+/*Menu Icon*/
+#headermenu .menu-icon{
+    font-size:20px;
+    padding: 0 21px;
+    height:60px;
+    line-height:60px;
+
+}
+#headermenu .mobile-menu-btn{
+    float:right;
+    padding: 0 16px;
+    display:none;
+
+}
+#headermenu .mobile-menu-btn:hover{
+    background-color:rgba(0,0,0,0.3);
+    cursor:pointer;
+
+}
+/*Sub Menu*/
+.main-menu li .sub-menu{
+    display:none;
+    position:absolute;
+    width:inherit;
+    background-color:rgba(0,0,0,0.9);
+    padding:8px;
+    
+
+}
+.main-menu .sub-menu li a{
+    height:32px;
+    line-height:32px;
+}
+.main-menu li a:hover{
+    background-color:rgba(0,0,0,0.3);
+    color:white !important;
+}
+.main-menu li:hover .sub-menu{
+    display:block;
+
+}
+.main-menu .sub-menu li{
+    display:block;
+}
+/*Footer*/
+body footer{
+    text-align:center;
+}
+
+
+

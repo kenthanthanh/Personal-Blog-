@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/form.css" rel="stylesheet">
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>Contact me</title>
+    </head>
+    <body>
+        
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <script src="./Js/contact.js"></script>
+            <form action="#" name="myForm" onsubmit = "return validate();">
+                <h1>Contact me</h1>
+                <hr>
+                <table>
+                    <tr>
+                        <td class="tdLabel"><label for="name" class="label">Your name:</label></td>
+                        <td><input type="text" name="name" class="width75 color" placeholder="Please enter your full name"  />
+                        <span id="name"></span>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label for="email" class="label">Your email:</label></td>
+                        <td><input type="email" name="email"  class="width75 color" placeholder="Please enter your email"  />
+                        <span id="email"></span>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label for="subject" class="label">Subject:</label></td>
+                        <td><input type="text" name="subject"  class="width75 color" />
+                        <span id="subject"></span>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLabel"><label for="message" class="label">Message:</label></td>
+                        <td><textarea name="message"  class="width75 color" rows="8" cols="80" ></textarea>
+                        <span id="message"></span>
+                    </td>
+                      
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" id="submit"   value="Send message" />
+                        </td>
+                    </tr>
+    
+                </table>
+
+            </form>
+            <script src="./Js/contact.js"></script>
+        </main>
+        <hr>
+        <!--Footer Section-->
+
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+    }
+            </script>
+    </body>
+</html>

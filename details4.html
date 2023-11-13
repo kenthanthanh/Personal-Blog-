@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./themify-icons/themify-icons.css" rel="stylesheet">
+
+        <link href="./CSS/style.css" rel="stylesheet">
+        <link href="./CSS/responsive.css" rel=" stylesheet">
+
+        <title>German Chocolate Cake</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <header>
+            <img class="banner" src="./Images/banner.png" alt="Banner">
+            <h1 class="header-web">Ken's Cake Blog</h1>
+            <nav id="headermenu" class="header-menu">
+                
+                <ul class="main-menu">
+                    <li class="hidden-menu"><a href="#"></a></li>
+                    <li>
+                    <a href="./index.html#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                            <ol class="sub-menu">
+                                <li><a href="./details1.html#">Classic Yellow Cake</a></li>
+                                <li><a href="./details2.html#">Coconut Bundt Cake</a></li>
+                                <li><a href="./details3.html#">Cream Cheese Pound Cake</a></li>
+                                <li><a href="./details4.html#">German Chocolate Cake</a></li>
+                            </ol>
+                    </li>
+                    <li>
+                        <a href="./order.html#">Order</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html#">Contact</a>
+
+                    </li> 
+                    <li>
+                        <a href="./about.html#">About</a>
+
+                    </li>
+            
+                </ul>
+                <div id= "menu-icon" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
+                
+                </div>
+            </nav>
+        </header>
+        <!--Main Section-->
+        <main>
+            <section>
+                <hr>
+                <p>12/Feb</p>
+                <h2>German Chocolate Cake</h2>
+                <p>I have long associated German Chocolate Cake with Father's Day, althought I'm not entirely sure why, I think I remember my mom making it for my dad once or twice growing up (althought never on Father's Day, ironically) and the correlation must have stuck somewhere along the way.</p>
+                <img src="./Images/German0.jpg" alt="German Chocolate Cake">
+            </section>
+            <div>
+                <p>I think the hundreds of reviews of this recipe speak for themselves, but let me add my own testament that this German Chocolate Cake is THE CAKE that every person in my family requested for their birthday growing up. I was super lucky, being a twin, because my mom would make both of our favorites: German chocolate cake for my sister, and carrot cake for me!</p>
+                <img src="./Images/German1.jpg" alt="German Chocolate Cake">
+            </div>
+            <section>
+                <h3>What is German Chocolate Cake?</h3>
+                <p>The name German chocolate cake is a little deceiving as it is not actually a German dessert and traditionally the cake is a lighter colored cake with a mild chocolate taste and the entire cake is usually covered in coconut pecan frosting.  My family's version is a chocolate cake with chocolate frosting covering the cake and coconut frosting on top and in the center of the cake. This cake seriously can't be beat, especially if you're a chocolate lover!</p>
+            </section>
+            <section>
+                <h3>How to Make German Chocolate Cake:</h3>
+                <p>1. Make the chocolate cake: Combine dry ingredients (sugar, flour, cocoa, baking powder, baking soda and salt). Combine wet ingredients (eggs, buttermilk, oil and vanilla). Mix together and stir in boiling water.</p>
+                <p>2. Bake at 375°F: Pour batter into prepared 8 or 9-inch round baking pans. I like to cut a round piece of wax or parchment paper for the bottom of the pan also, to make sure the cake comes out easily.</p>
+                <p>3. Make the German Chocolate Frosting: Combine brown sugar, granulated sugar, butter, egg yolks, and evaporated milk in a saucepan and bring the mixture to a low boil over medium heat. Stir constantly until the mixture thickens.  Remove from heat and stir in vanilla, nuts and coconut. Allow to cool completely before layering it on the cake.</p>
+                <img src="./Images/German2.jpg" alt="German Chocolate Cake">
+                <p>4. Make chocolate frosting:  Melt butter, stir in cocoa powder, slowly add powdered sugar and milk, beating to spreading consistency. Add small amount additional milk, if needed to thin the frosting, or a little extra powder, until you reach your desired consistency. Stir in vanilla.</p>
+                <p>5. Assemble: Place one of the cake rounds on your serving stand or plate.  Smooth a thin layer of chocolate frosting over the cake layer, and then spoon half of the coconut frosting on top, spreading it into a smooth layer. Leave about ½ inch between the filling and edge of cake.  Stack the second cake round on top. Smooth chocolate frosting over the entire cake.  Spoon remaining coconut frosting on top of the cake.</p>
+                <img src="./Images/German3.jpg" alt="German Chocolate Cake">
+            </section>
+
+        </main>
+        <hr>
+        <!--Footer Section-->
+        <footer>
+            <p>© 2023 by Ken's Cake</p>
+
+        </footer>
+         <!--Js Responsive onclick-->
+         <script>
+            var header = document.getElementById('headermenu');
+            var mobileMenu = document.getElementById('menu-icon');
+            var menuHeight = headermenu.clientHeight;
+    
+            mobileMenu.onclick = function(){
+                var isClosed = headermenu.clientHeight === menuHeight;
+                if (isClosed){
+                    headermenu.style.height = 'auto';
+    
+                }else{
+                    headermenu.style.height = null ;
+                
+                }
+            }
+            /*Hidden Menu When Onclick outside navigation menu*/
+        var outMenu = document.getElementById('headermenu');
+        outMenu.onmouseout = function(){
+        headermenu.style.height = null ;
+
+    }
+            </script>
+    </body>
+</html>
